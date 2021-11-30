@@ -1,0 +1,17 @@
+cluster_name: testCluster
+name: test12
+steps:
+- destination:
+    clusterName: optional
+    namespace: str
+  name: step1
+  prune: false
+  tests:
+  - {}
+- destination:
+    clusterName: optional
+    namespace: str
+  name: step2
+  prune: false
+  tests:
+  - {}
