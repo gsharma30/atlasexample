@@ -1,4 +1,4 @@
-cluster_name: testCluster
+cluster_name: testCluster2
 name: test1
 steps:
 - destination:
