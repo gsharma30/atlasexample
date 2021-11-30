@@ -15,3 +15,10 @@ steps:
   prune: false
   tests:
   - {}
+- destination:
+    clusterName: optional
+    namespace: str
+  name: step3
+  prune: false
+  tests:
+  - {}

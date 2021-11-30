@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+destination:
+  clusterName: optional
+  namespace: str
+kind: application
+metadata:
+  annotations:
+    atlas-argo-sync-prune: false
+  name: step3-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    path: test
+    repoURL: test
