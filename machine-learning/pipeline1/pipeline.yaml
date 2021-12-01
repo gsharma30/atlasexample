@@ -6,15 +6,13 @@ steps:
     namespace: str
   name: step1
   prune: false
-  tests:
-  - {}
+  tests: []
 - destination:
     clusterName: optional
     namespace: str
   name: step2
   prune: false
-  tests:
-  - {}
+  tests: []
 - destination:
     clusterName: cluster4
     namespace: str
