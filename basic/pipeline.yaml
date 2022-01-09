@@ -18,7 +18,6 @@ steps:
       SERVICE_INTERNAL_URL: testapp.dev.svc.cluster.local
 - name: deploy_to_int
   application_path: testapp_int.yml
-  rollback: true
   tests:
   - path: verifyendpoints.sh
     type: inject
