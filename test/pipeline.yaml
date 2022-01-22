@@ -18,6 +18,7 @@ steps:
     variables:
       SERVICE_INTERNAL_URL: testapp.dev.svc.cluster.local
 - name: deploy_to_int
+  cluster_name: test_cluster
   application_path: testapp_int.yml
   tests:
   - path: verifyendpoints.sh
