@@ -52,7 +52,6 @@ metadata:
 spec:
   selector:
     matchLabels:
-      name: fluentd-elasticsearch
       app: testapp
   template:
     metadata:
