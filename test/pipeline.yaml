@@ -20,14 +20,14 @@ steps:
 - name: deploy_to_int
   cluster_name: test_cluster
   application_path: testapp_int.yml
-  tests:
-  - path: verifyendpoints.sh
-    type: inject
-    image: alpine:latest
-    commands: [sh, -c, ./verifyendpoints.sh]
-    before: false
-    variables:
-      SERVICE_INTERNAL_URL: testapp.int.svc.cluster.local
+#   tests:
+#   - path: verifyendpoints.sh
+#     type: inject
+#     image: alpine:latest
+#     commands: [sh, -c, ./verifyendpoints.sh]
+#     before: false
+#     variables:
+#       SERVICE_INTERNAL_URL: testapp.int.svc.cluster.local
 #   - path: failtest.sh
 #     type: inject
 #     image: alpine:latest
