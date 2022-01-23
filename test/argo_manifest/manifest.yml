@@ -44,7 +44,7 @@ spec:
 #         - image: quay.io/fluentd_elasticsearch/fluentd:v2.5.2
 #           name: fluentd-elasticsearch
 #       terminationGracePeriodSeconds: 30
-# ---
+---
 apiVersion: v1
 kind: Pod
 metadata:
