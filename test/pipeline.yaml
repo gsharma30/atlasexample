@@ -12,7 +12,7 @@ steps:
   tests:
   - path: verifyendpoints.sh
     type: inject
-    image: alpine:latest
+    image: curlimages/curl:latest
     commands: [sh, -c, ./verifyendpoints.sh]
     before: false
     variables:
