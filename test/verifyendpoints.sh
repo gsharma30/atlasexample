@@ -1,5 +1,5 @@
 #!/bin/sh
-apk --no-cache add curl
+# apk --no-cache add curl
 sleep 10
 for i in 1 2 3 4 5
 do
