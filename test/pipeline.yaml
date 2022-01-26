@@ -9,14 +9,14 @@ steps:
 - name: deploy_to_dev
   #This is the path of the ArgoCD Application file
   application_path: testapp_dev.yml
-  tests:
-  - path: verifyendpoints.sh
-    type: inject
-    image: curlimages/curl:latest
-    commands: [sh, -c, ./verifyendpoints.sh]
-    before: false
-    variables:
-      SERVICE_INTERNAL_URL: testapp.dev.svc.cluster.local
+#   tests:
+#   - path: verifyendpoints.sh
+#     type: inject
+#     image: curlimages/curl:latest
+#     commands: [sh, -c, ./verifyendpoints.sh]
+#     before: false
+#     variables:
+#       SERVICE_INTERNAL_URL: testapp.dev.svc.cluster.local
 - name: deploy_to_int
 #   cluster_name: test_cluster
   application_path: testapp_int.yml
