@@ -1,0 +1,6 @@
+name: test_pipeline
+cluster_name: in-cluster
+steps:
+- name: step1
+  application_path: step1/argo/step1-app.yml
+  tests: []
