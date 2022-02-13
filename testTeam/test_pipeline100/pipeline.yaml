@@ -1,0 +1,6 @@
+name: test_pipeline100
+cluster_name: in-cluster
+steps:
+- name: deploy-to-dev2
+  application_path: deploy-to-dev2/argo/deploy-to-dev2-app.yml
+  tests: []
