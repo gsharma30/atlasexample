@@ -1,8 +1,8 @@
 name: test_pipeline100
 cluster_name: in-cluster
 steps:
-- name: deploy-to-dev2
-  application_path: deploy-to-dev2/argo/deploy-to-dev2-app.yml
+- name: deploy-to-dev3
+  application_path: deploy-to-dev3/argo/deploy-to-dev3-app.yml
   tests:
   - before: "false"
     commands:
