@@ -3,4 +3,11 @@ cluster_name: in-cluster
 steps:
 - name: deploy-to-dev5
   application_path: deploy-to-dev5/argo/deploy-to-dev5-app.yml
-  tests: []
+  tests:
+  - before: "false"
+    commands:
+    - sh
+    - -c
+    - ./verifyendpoints.sh
+    path: verifyendpoints.sh
+    type: inject
