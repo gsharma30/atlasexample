@@ -4,10 +4,25 @@ steps:
 - name: deploy-to-dev5
   application_path: deploy-to-dev5/argo/deploy-to-dev5-app.yml
   tests:
-  - before: "false"
+  - filename: verifyendpoints.sh
+    filetype: ""
+    type: inject
+    image: ""
     commands:
     - sh
     - -c
     - ./verifyendpoints.sh
-    path: verifyendpoints.sh
+    before: "false"
+    namespace: ""
+    variables: []
+  - filename: verifyendpoints.sh
+    filetype: ""
     type: inject
+    image: ""
+    commands:
+    - sh
+    - -c
+    - ./verifyendpoints.sh
+    before: "false"
+    namespace: ""
+    variables: []
