@@ -9,5 +9,4 @@ steps:
     - sh
     - -c
     - ./verifyendpoints.sh
-    path: verifyendpoints.sh
     type: inject
