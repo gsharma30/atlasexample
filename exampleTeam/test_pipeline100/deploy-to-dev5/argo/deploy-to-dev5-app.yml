@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: deploy-to-dev5-app
+  namespace: argocd
+  annotations:
+    prune: false
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/gsharma30/atlasexample.git
+    targetRevision: main
+    path: exampleTeam/test_pipeline100/deploy-to-dev5/argo/argo_manifest
+  destination:
+    server: in-cluster
+    namespace: dev
