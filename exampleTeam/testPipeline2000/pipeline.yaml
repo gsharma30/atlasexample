@@ -1,0 +1,12 @@
+name: testPipeline2000
+cluster_name: in-cluster
+steps:
+- name: deploy-to-dev5
+  application_path: deploy-to-dev5/argo/deploy-to-dev5-app.yml
+  tests:
+  - before: "false"
+    commands:
+    - sh
+    - -c
+    - ./verifyendpoints.sh
+    type: inject
